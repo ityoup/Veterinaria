@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registro de membresía PetCare</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header class="reg_pet">
+        <nav>
+            <ul>
+                <li><a href="reg_pet.html">Registro</a></li>
+                <li><a href="acceder.html">Acceder</a></li>
+                <li><a href="home.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="/postMascotas" enctype="multipart/form-data" method="post">
+        <h2>Registro de mascotas</h2>
+   
+        <label for="nombre_mascota">Nombre de la mascota:</label>
+        <input type="text" id="nombre_mascota" name="nombre">
+
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+
+        <label for="especie">Especie:</label>
+        <select id="especie" name="especie">
+            <option value="">Seleccione una especie</option>
+            <option value="Perro">Perro</option>
+            <option value="Gato">Gato</option>
+            <option value="Ave">Ave</option>
+            <option value="Reptil">Reptil</option>
+            <option value="Roedor">Roedor</option>
+        </select>
+
+        <label for="raza">Raza:</label>
+        <input type="text" id="raza" name="raza">
+
+        <label for="sexo">Sexo:</label>
+        <input type="radio" id="sexo_m" name="sexo" value="Macho">
+        <label for="sexo_m">Macho</label>
+        <input type="radio" id="sexo_h" name="sexo" value="Hembra">
+        <label for="sexo_h">Hembra</label>
+
+        <label for="id_cliente">ID de cliente:</label>
+        <input type="text" id="id_cliente" name="id_cliente">
+
+        <label for="imagen_mascota">Imagen de la mascota:</label>
+        
+            <input style="color: white;" type="file" class="form-control-file" name="subirImagenMas"> <br> 
+      
+
+        <input type="submit" value="Aceptar" class="btn btn-primary">            
+
+    </form>
+  
+</body>

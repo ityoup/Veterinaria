@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../public/script.js"></script>
+    <meta charset="UTF-8">
+    <title>Formulario de membresía</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <header class="memb">
+      <nav>
+        <ul>
+          <li><a href="reg_pet.html">Registro</a></li>
+          <li><a href="acceder.html">Acceder</a></li>
+          <li><a href="home.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form action="/postMembresia" method="post">
+      <h2>Formulario de membresía</h2>
+      <label for="membresia">Membresía:</label>
+      <select id="membresia" name="membresia" required>
+        <option value="White">White</option>
+        <option value="Black">Black</option>
+      </select>
+      <label for="tip_membresia">Tipo de membresía:</label>
+      <select id="tip_membresia" name="tip_membresia" required>
+        <option value="Cobre">Cobre</option>
+        <option value="Plata">Plata</option>
+        <option value="Oro">Oro</option>
+      </select>
+      <label for="fecha_inicio">Fecha de inicio:</label>
+      <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+      <label for="fecha_vencimiento">Fecha de vencimiento:</label>
+      <input type="date" id="fecha_vencimiento" name="fecha_vencimiento" required>
+      <label for="id_cliente">ID de cliente:</label>
+      <input type="text" id="id_cliente" name="id_cliente">
+      <button onclick="alerta()" type="submit" id="button-submit" class="btn-destello">Enviar</button>
+    </form>
+   
+  </body>
+</html>

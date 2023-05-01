@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de clientes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header class="reg_cliente">
+        <nav>
+            <ul>
+                <li><a href="reg_cliente.html">Registro</a></li>
+                <li><a href="acceder.html">Acceder</a></li>
+                <li><a href="home.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="/postUser" method="post">
+        <h2>Registro de clientes</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+        <label for="direccion">Dirección:</label>
+        <textarea id="direccion" name="direccion"></textarea>
+        <input type="submit" value="Aceptar" class="btn btn-primary">
+    </form>
+    
+</body>
+
+</html>

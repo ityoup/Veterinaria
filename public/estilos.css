@@ -1,0 +1,223 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  button:hover {
+    background-color: #02ab2a;
+    transition: background-color 0.5s ease;
+    box-shadow: 0px 0px 10px #00a341;
+  }
+  
+  
+  /* Estilos para el header */
+  header.home {
+    background-color: #007bfe;
+    color: #fff;
+    padding: 10px;
+  }
+  header.reg_pet {
+    background-color: #009c53;
+    color: #fff;
+    padding: 10px;
+  }
+  header.reg_cliente {
+    background-color: #9e5700;
+    color: #fff;
+    padding: 10px;
+}
+header.memb {
+  background-color: #ff8c00;
+  color: #fff;
+  padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Resta la altura del header */
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  img {
+    position: bottom;
+    top:0;
+    left: 0;
+    z-index: -1;
+    width: 70%;
+    height: 50%;
+    filter: blur(0px);
+  }
+  
+  
+  
+  /* Estilos para el contenido */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-top: 0;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+/* Estilos para el formulario de registro de mascotas */
+form {
+    width: 40%;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 10px;
+    
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    /* Agrega bordes redondos */
+    border-radius: 10px;
+  }
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="radio"] {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .file-upload {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .file-upload input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+  }
+  
+  .file-upload .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  #button-next {
+	float: right;
+}
+
+  
+  /* Estilos para el segundo formulario */
+  
+  #form-cliente {
+    display: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  #button-submit {
+    background-color: #af724c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+   
+  }
+  button:hover {
+    background-color: #ab4302;
+    transition: background-color 0.5s ease;
+    box-shadow: 0px 0px 10px #a32b00;
+  }
